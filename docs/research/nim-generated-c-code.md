@@ -1,4 +1,4 @@
-# Generated C in Nim: Quality, Debugging, and Execution-Platform Implications
+# Building GUDGEON: A Nim VM and Execution Platform
 
 ## Executive summary
 
