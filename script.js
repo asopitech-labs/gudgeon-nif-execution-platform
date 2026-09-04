@@ -8,8 +8,8 @@ document.querySelectorAll('[data-copy]').forEach((button) => {
     try {
       await navigator.clipboard.writeText(button.dataset.copy);
       const original = button.textContent;
-      button.textContent = 'copied';
+      button.textContent = document.documentElement.lang === 'ja' ? 'コピー済み' : 'copied';
       setTimeout(() => { button.textContent = original; }, 1200);
-    } catch { button.textContent = 'select'; }
+    } catch { button.textContent = document.documentElement.lang === 'ja' ? '選択' : 'select'; }
   });
 });
